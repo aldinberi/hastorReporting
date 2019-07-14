@@ -1,0 +1,117 @@
+    /*ParseObject score = new ParseObject("Score");
+    score.put("username", "beri");
+    score.put("score", 100);
+    score.saveInBackground(new SaveCallback() {
+      @Override
+      public void done(ParseException e) {
+        if (e == null){
+          Log.i("Success", "We saved the score");
+        }else{
+          e.printStackTrace();
+        }
+      }
+    });
+
+     ParseQuery<ParseObject> query = ParseQuery.getQuery("Score");
+
+      query.getInBackground("f8szQs1qbg", new GetCallback<ParseObject>() {
+          @Override
+          public void done(ParseObject parseObject, ParseException e) {
+              if (e == null && parseObject != null ) {
+
+                  parseObject.put("score", 85);
+                  parseObject.saveInBackground();
+
+                  Log.i("USERNAME", parseObject.getString("username"));
+                  Log.i("SCORE", Integer.toString(parseObject.getInt("score")));
+              }
+          }
+      });*/
+
+   /* tweet my = new tweet("aldin", "Hi there");
+    ParseObject parseObject = new ParseObject("tweet");
+    parseObject.put("User", my.getUsername());
+    parseObject.put("tweet", my.getTweet());
+
+    parseObject.saveInBackground(new SaveCallback() {
+      @Override
+      public void done(ParseException e) {
+        if ( e == null){
+          Log.i("Status", "Successfully added the parse server");
+        }else{
+          e.printStackTrace();
+        }
+      }
+    });
+
+    ParseQuery<ParseObject> query = ParseQuery.getQuery("tweet");
+
+    query.getInBackground("SrX4h9HJlP", new GetCallback<ParseObject>() {
+      @Override
+      public void done(ParseObject object, ParseException e) {
+            if(e == null && object != null){
+
+              object.put("tweet", "It's nice here");
+              object.saveInBackground();
+
+              Log.i("USERNAME:", object.getString("User"));
+              Log.i("TWEET:", object.getString("tweet"));
+
+            }
+      }
+    }); */
+
+  /*  ParseQuery<ParseObject> query = ParseQuery.getQuery("Score");
+
+    query.findInBackground(new FindCallback<ParseObject>() {
+      @Override
+      public void done(List<ParseObject> objects, ParseException e) {
+              if(e == null){
+                if(objects.size() > 0){
+                  for(ParseObject object : objects){
+                      Log.i("username", object.getString("username"));
+                      Log.i("username", object.getString("username"));
+                  }
+                }
+              }
+
+      }
+    }); */
+
+  /*ParseUser user = new ParseUser();
+
+  user.setUsername("aldin");
+  user.setPassword("campo");
+
+  user.signUpInBackground(new SignUpCallback() {
+      @Override
+      public void done(ParseException e) {
+          if (e == null){
+              Log.i("Sign up OK", "Successful");
+          }else{
+              e.printStackTrace();
+          }
+      }
+  }); */
+
+  /*
+  ParseUser.logInInBackground("aldin", "campo", new LogInCallback() {
+      @Override
+      public void done(ParseUser user, ParseException e) {
+          if(user != null){
+              Log.i("Success", "Loged in");
+          }else{
+              e.printStackTrace();
+
+          }
+      }
+  }); */
+
+  /*ParseUser.logOut();
+
+  if(ParseUser.getCurrentUser() != null){
+      Log.i("Signed in", ParseUser.getCurrentUser().getUsername());
+  }else{
+      Log.i("not luck", "Not signed in");
+  } */
+
